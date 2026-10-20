@@ -103,6 +103,8 @@ Check that "Memories of Mars" isn't muted in the Windows volume mixer.
 
 ## What's new
 
+**1.0.1** — Players now show under their own Steam name in the player list (before, everyone appeared with the host's or your own name).
+
 **1.0.0** — First release: single player, friends' worlds and invites inside the game's own server list, achievements, REBORN built into the menu, auto-update.
 
 ---
