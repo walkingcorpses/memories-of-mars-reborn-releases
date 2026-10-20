@@ -23,8 +23,9 @@ achievements with them. **Reborn** puts them back: everything runs on your own P
 
 | | |
 |---|---|
-| **Single player** | Press **SINGLE PLAYER** on the main menu. Your world starts with the game. |
-| **Play with friends** | Friends who also have Reborn see your world in **PLAY ONLINE**, or accept a Steam "Join Game". No lobby, no codes to type. |
+| **Single player** | Press **SINGLE PLAYER** on the main menu: straight into your world, even if you press it the moment the menu appears. |
+| **Play with friends** | In **PLAY ONLINE** you see your friends' worlds, plus an **`Invite <friend name>`** row for every friend who is online: select it, press JOIN, and they get a Steam invite. Or accept a Steam "Join Game". |
+| **Your saves** | The world and every player's character are saved on the host's PC. Start the game again and carry on. |
 | **Achievements** | Unlocks are saved and written to Steam again. |
 | **Built into the game** | REBORN is in the title logo and the mod version sits in the corner of the main menu. No overlay, no extra window, works in fullscreen at any resolution. |
 | **Updates itself** | Checks this page when the game starts and installs new versions. |
@@ -38,7 +39,17 @@ achievements with them. **Reborn** puts them back: everything runs on your own P
 
 Your friends do the same, then you can play together.
 
-> **First time hosting?** Reborn downloads the game's dedicated server from Valve (about 800 MB) in the background the first time. Only the person hosting needs it.
+> **First start:** Reborn downloads the game's dedicated server from Valve (about 800 MB) before the game opens, with a progress window. Only the person hosting needs it.
+
+## Playing with friends
+
+1. **Host:** just play. Once your world is up, Reborn opens the ports on your router and tells Steam you're hosting.
+2. **Invite someone:** in **PLAY ONLINE**, select **`Invite <friend name>`** and press **JOIN**. They get a Steam invite; accepting it starts their game and joins your world.
+3. **Join someone:** a friend who is hosting shows up as **`<friend name>'s world`** in PLAY ONLINE. Select it and press JOIN.
+4. **Continue later:** the host starts the game again (the world loads from their PC); friends join the same way and get their characters back.
+   Your friend can't continue your world when you're offline: your PC is the server.
+
+Everyone needs Reborn installed.
 
 ## How it works
 
@@ -57,6 +68,12 @@ find each other through Steam, so there is nothing to configure.
 Uninstalling reverses every one of these. The game's own pak is never modified. No game files are included in this download.
 </details>
 
+<details>
+<summary><b>Where are my saves?</b></summary>
+
+`%LOCALAPPDATA%\MemoriesOfMarsReborn\server\Game\Saved\DB\Serverreborn_world_01` on the host's PC. Copy that folder (with the game closed) to back it up.
+</details>
+
 ## Troubleshooting
 
 <details>
@@ -73,6 +90,12 @@ Start it again: Reborn repairs its changes on launch. If it still fails, run **M
 </details>
 
 <details>
+<summary><b>There's no sound</b></summary>
+
+Check that "Memories of Mars" isn't muted in the Windows volume mixer.
+</details>
+
+<details>
 <summary><b>Where are the logs?</b></summary>
 
 `%LOCALAPPDATA%\MemoriesOfMarsReborn`
@@ -80,7 +103,7 @@ Start it again: Reborn repairs its changes on launch. If it still fails, run **M
 
 ## What's new
 
-**1.0.0** — First release: single player, friends' worlds, achievements, REBORN built into the menu, auto-update.
+**1.0.0** — First release: single player, friends' worlds and invites inside the game's own server list, achievements, REBORN built into the menu, auto-update.
 
 ---
 
