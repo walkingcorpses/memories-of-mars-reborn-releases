@@ -26,7 +26,8 @@ achievements with them. **Reborn** puts them back: everything runs on your own P
 | **Single player** | Press **SINGLE PLAYER** on the main menu: straight into your world, even if you press it the moment the menu appears. |
 | **Play with friends** | In **PLAY ONLINE** you see your friends' worlds, plus an **`Invite <friend name>`** row for every friend who is online: select it, press JOIN, and they get a Steam invite. Or accept a Steam "Join Game". |
 | **Your saves** | The world and every player's character are saved on the host's PC. Start the game again and carry on. |
-| **Achievements** | Unlocks are saved and written to Steam again. |
+| **Achievements** | Unlocks are saved and written to Steam again. Works in your own world too (v1.1.0 fixed the world server never counting stats). |
+| **Plugins** | Small add-ons that ship with Reborn, each with an on/off switch in the new **PLUGINS** screen on the Esc menu: a **minimap** (top right, turns with you, shows your pins and alliance mates), **map pins and alliance mates on the compass**, **map zoom up to 32x**, a **detailed map** with terrain shading and **resource dots**. Changes apply the next time the game starts. |
 | **Built into the game** | REBORN is in the title logo and the mod version sits in the corner of the main menu. No overlay, no extra window, works in fullscreen at any resolution. |
 | **Updates itself** | Checks this page when the game starts and installs new versions. |
 | **Fully reversible** | Run the setup again and press **Uninstall** to put the game back exactly as it was. |
@@ -64,6 +65,7 @@ find each other through Steam, so there is nothing to configure.
 - Adds a patch pak next to the game's own pak (`pakchunk0-WindowsNoEditor_reborn_P.pak`) with the changed menu files, built on your PC from your own copy of the game.
 - Patches 2 bytes of `MemoriesOfMars.exe` so the game accepts that unsigned pak (the original is kept as `MemoriesOfMars.exe.reborn-original`).
 - Adds one line to the game's user `Engine.ini` so it talks to the local service.
+- Only while at least one plugin that runs code in the game is switched on: copies `dwmapi.dll` and a `ue4ss` folder ([UE4SS](https://github.com/UE4SS-RE/RE-UE4SS), MIT licence) next to `MemoriesOfMars.exe` so the plugins can run. With those plugins off, or after uninstalling, they are removed again. Some antivirus tools dislike a `dwmapi.dll` next to a game; that is the reason.
 
 Uninstalling reverses every one of these. The game's own pak is never modified. No game files are included in this download.
 </details>
